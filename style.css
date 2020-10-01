@@ -1,0 +1,140 @@
+.item0{grid-area: 'zero';}
+.item1{grid-area: 'comma';}
+
+.minus{grid-area: 'minus';}
+.plus{grid-area: 'plus';}
+.point{grid-area: 'point';}
+.equal{grid-area: 'equal';}
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1f1f1f;
+}
+
+div#container{
+  width: 250px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+div#visor{
+  background-color: white;
+  height: 9rem;
+  margin: 10px;
+}
+
+
+div#digitos{
+  
+  height: 100%;
+  margin: 0px 5px 5px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+button{
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+button:hover{
+  background-color: #dfdfdf;
+}
+
+/*PRIMEIRO BLOCO DA ESQUERDA*/
+
+div#digitos #right{
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: 100%;
+}
+
+div#digitos #right #blockOne{
+  display: inline-grid;
+  grid-template-columns: 50px 50px 50px;
+  width: 100%;
+  height: 80%;
+  grid-gap: 5px;
+  padding: 5px;
+}
+
+div#digitos #right #blockOne div{
+  width: 50px;
+  height: 50px;
+}
+
+div#digitos #right .buttonsRight div button{
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+div#digitos #right #blockTwo{
+  display: grid;
+  grid-template-columns: 105px 50px;
+  grid-template-areas:
+    'zero zero comma'
+  ;
+  grid-column-gap: 5px;
+  padding: 0px 5px;
+}
+
+div#digitos #right #blockTwo div{
+  width: 100%;
+  height: 50px;
+}
+
+
+
+
+/*COLUNA LEFT*/
+div#digitos #left{
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: 100%;
+}
+
+div#digitos #left #blockThree{
+  display: grid;
+  grid-template-rows: 50px 50px 50px 105px;
+  grid-template-areas: 
+  'minus'
+  'plus'
+  'point'
+  'equal'
+  'equal'
+  ;
+  width: 100%;
+  height: 100%;
+  grid-gap: 5px;
+  padding: 5px 5px 0px 0px;
+}
+
+div#digitos #left #block div{
+  width: 50px;
+  height: 100%;
+}
+
+div#digitos #left div button{
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  cursor: pointer;
+}
