@@ -60,4 +60,7 @@ function calcula(){
   else if(valores.operator == '*'){
     return Number(valores.num1) * Number(valores.num2);
   }
+  else if(valores.operator == '-'){
+    return Number(valores.num1) - Number(valores.num2);
+  }
 };
