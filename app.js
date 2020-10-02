@@ -13,6 +13,8 @@ equal.addEventListener('click', ()=>{
   valores.num2 = 0
 })
 
+
+
 clear.addEventListener('click', ()=>{
   visor.innerHTML = 0
   valores = {
@@ -66,4 +68,4 @@ function calcula(){
   else if(valores.operator == '+'){
     return Number(valores.num1) + Number(valores.num2);
   }
-}
+};
