@@ -13,6 +13,7 @@ equal.addEventListener('click', ()=>{
   valores.num2 = 0
 })
 
+
 clear.addEventListener('click', ()=>{
   visor.innerHTML = 0
   valores = {
