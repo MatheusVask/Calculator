@@ -53,4 +53,8 @@ function recebeNum(num){
   }
 }
 
-
+function calcula(){
+  if(valores.operator == '/'){
+    return Number(valores.num1) / Number(valores.num2);
+  }
+};
