@@ -1,6 +1,7 @@
 const valueDisplay = document.getElementById('value');
 const digitos = document.getElementById('digitos');
 const equal = document.getElementsByClassName('equal')[0];
+const clear = document.getElementById('clear');
 const visor = document.getElementById('value');
 
 digitos.addEventListener('click', (e)=>{validaNum1(e.toElement.innerText)});
@@ -10,6 +11,16 @@ equal.addEventListener('click', ()=>{
   valores.result = visor.innerHTML
   valores.num1 = valores.result
   valores.num2 = 0
+})
+
+clear.addEventListener('click', ()=>{
+  visor.innerHTML = 0
+  valores = {
+    num1: 0,
+    operator: '',
+    num2: 0,
+    result: 0
+  }
 })
 
 let valores = {
